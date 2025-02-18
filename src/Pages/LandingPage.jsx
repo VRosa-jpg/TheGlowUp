@@ -35,7 +35,7 @@ const LandingPage = () => {
               <h2 className="text-3xl font-bold mb-4">Want to View This Content?</h2>
               <p className="text-lg mb-6">Sign up to access exclusive content and more!</p>
               <Link to="/login">
-                <button className="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600">
+                <button className="flex flex-row items-center justify-center whitespace-nowrap bg-blue-500 text-white py-4 px-6 rounded-lg hover:bg-blue-600 w-[120px] bg-gradient-to-b from-[#381032] via-[#9f4a9f] to-[#e39fe3]">
                   Sign Up Now
                 </button>
               </Link>

@@ -25,4 +25,50 @@ html, body {
   display: none; /* for Chrome, Safari, and Opera */
 }
 
+/* Homepage.css */
+
+/* Main sliding effect */
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.post-slide-0 {
+  animation: slideIn 0.5s ease-out forwards;
+}
+
+
+/* Apply this to make the scroll behave nicely */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  scroll-snap-type: y mandatory;
+}
+
+.snap-start {
+  scroll-snap-align: start;
+}
+
+/* Optional: Styling for posts */
+.post {
+  width: 90%;
+  max-width: 600px;
+  margin: 10px auto;
+  border: 2px solid #ccc;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
   
